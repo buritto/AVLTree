@@ -189,6 +189,7 @@ private:
 
 int main() {
     auto * tree = new AvlTree<int>(new Node<int>(83));
+
     tree->Add(35);
     tree->Add(15);
     tree->Add(21);
@@ -203,6 +204,13 @@ int main() {
     tree->Remove(50);
     tree->Remove(93);
     tree->Remove(92);
+
+    tree->Add(78);
+    tree->Add(81);
+
+    tree->Add(22);
+    tree->Add(2);
+    tree->Add(1000);
 
     int min = tree->GetMin();
     return 0;
